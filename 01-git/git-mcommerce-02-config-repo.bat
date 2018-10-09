@@ -11,22 +11,27 @@ git init
 git branch
 
 ##############################################################################
-# (03.)AJOUTER / RETIRER DES ELEMENTS DANS LE PROCHAIN COMMIT :
-#      -->ELEMENTS A AJOUTER / RETIRER : UN FICHIER / REPERTOIRE DU REPERTOIRE COURANT.
+# (03.)AJOUTER DES ELEMENTS DANS LE PROCHAIN COMMIT :
+#      -->ELEMENTS A AJOUTER : UN FICHIER / REPERTOIRE DU REPERTOIRE COURANT.
 ##############################################################################
 git add [NOM DU FICHIER   ]
 git add [NOM DU REPERTOIRE]
+
+##############################################################################
+# (04.)RETIRER DES ELEMENTS DU PROCHAIN COMMIT :
+#      -->ELEMENTS A RETIRER : UN FICHIER / REPERTOIRE DU REPERTOIRE COURANT.
+##############################################################################
 git rm  [NOM DU FICHIER   ]
 git rm  [NOM DU REPERTOIRE]
 
 ##############################################################################
-# (04.)LANCER LE PROCHAIN COMMIT VERS UN REPOSITORY LOCAL :
+# (05.)LANCER LE PROCHAIN COMMIT VERS UN REPOSITORY LOCAL :
 #      -->REPOSITORY LOCAL DESTINATAIRE : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
 git commit -m "Premier commit"
 
 ##############################################################################
-# (05.)ENREGISTRER / DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
+# (06.)ENREGISTRER / DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
 #      -->REPOSITORY DISTANT A ENREGISTRER / DESENREGISTRER          : LE REPOSITORY DISTANT FOURNI.
 #      -->REPOSITORY LOCAL DANS LEQUEL ENREGISTRER / /DESENREGISTRER : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
@@ -35,7 +40,7 @@ git remote add distant git@github.com:chat-roux/mcommerce-config-repo.git
 git remote rm distant
 
 ##############################################################################
-# (06.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
+# (07.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
 #      -->ORIGINE DU TRANSFERT     : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
 #      -->DESTINATION DU TRANSFERT : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
 #      -->TYPE DE TRANSFERT : TRANSFERT SANS ECRASEMENT.
@@ -43,7 +48,7 @@ git remote rm distant
 git fetch
 
 ##############################################################################
-# (07.)TRANSFERER LE CONTENU DU REPOSITORY LOCAL DANS LE REPOSITORY DISTANT :
+# (08.)TRANSFERER LE CONTENU DU REPOSITORY LOCAL DANS LE REPOSITORY DISTANT :
 #      -->ORIGINE DU TRANSFERT     : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
 #      -->DESTINATION DU TRANSFERT : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
 #      -->TYPE DE TRANSFERT : TRANSFERT AVEC ECRASEMENT.
