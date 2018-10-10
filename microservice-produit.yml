@@ -16,7 +16,7 @@ spring:
     #driverClassName: "com.mysql.cj.jdbc.Driver"
     driverClassName: "org.mariadb.jdbc.Driver"
     sql-script-encoding: UTF-8
-    data: "classpath:./data.sql"
+    data: "classpath:./import.sql"
   # ---- (02.02.)SPRING-JPA-CONFIGURATION ----
   jpa:
     show-sql: true
