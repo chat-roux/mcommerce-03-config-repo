@@ -10,7 +10,7 @@ server:
 spring:
   # ---- (02.01.)SPRING-DATASOURCE-CONFIGURATION ----
   datasource:
-    url: "jdbc:mariadb://localhost:3306/productdb?createDatabaseIfNotExist=true"
+    url: "jdbc:mariadb://localhost:3306/produitdb?createDatabaseIfNotExist=true"
     username: "root"
     password: "tcharou"
     #driverClassName: "com.mysql.cj.jdbc.Driver"
