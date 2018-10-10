@@ -31,16 +31,22 @@ git rm  [NOM DU REPERTOIRE]
 git commit -m "Premier commit"
 
 ##############################################################################
-# (06.)ENREGISTRER / DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
-#      -->REPOSITORY DISTANT A ENREGISTRER / DESENREGISTRER          : LE REPOSITORY DISTANT FOURNI.
-#      -->REPOSITORY LOCAL DANS LEQUEL ENREGISTRER / /DESENREGISTRER : LE REPOSITORY LOCAL COURANT.
+# (06.)ENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
+#      -->REPOSITORY DISTANT A ENREGISTRER         : LE REPOSITORY DISTANT FOURNI.
+#      -->REPOSITORY LOCAL DANS LEQUEL ENREGISTRER : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
 git remote add distant https://github.com/chat-roux/mcommerce-config-repo.git
 git remote add distant git@github.com:chat-roux/mcommerce-config-repo.git
+
+##############################################################################
+# (07.)DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
+#      -->REPOSITORY DISTANT A DESENREGISTRER         : LE REPOSITORY DISTANT FOURNI.
+#      -->REPOSITORY LOCAL DANS LEQUEL DESENREGISTRER : LE REPOSITORY LOCAL COURANT.
+##############################################################################
 git remote rm distant
 
 ##############################################################################
-# (07.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
+# (08.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
 #      -->ORIGINE DU TRANSFERT     : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
 #      -->DESTINATION DU TRANSFERT : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
 #      -->TYPE DE TRANSFERT : TRANSFERT SANS ECRASEMENT.
@@ -48,7 +54,7 @@ git remote rm distant
 git fetch
 
 ##############################################################################
-# (08.)TRANSFERER LE CONTENU DU REPOSITORY LOCAL DANS LE REPOSITORY DISTANT :
+# (09.)TRANSFERER LE CONTENU DU REPOSITORY LOCAL DANS LE REPOSITORY DISTANT :
 #      -->ORIGINE DU TRANSFERT     : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
 #      -->DESTINATION DU TRANSFERT : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
 #      -->TYPE DE TRANSFERT : TRANSFERT AVEC ECRASEMENT.
