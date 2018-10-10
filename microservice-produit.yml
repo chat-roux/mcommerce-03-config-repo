@@ -23,7 +23,7 @@ spring:
       ddl-auto: "update"
     properties:
       hibernate:
-        dialect: "org.hibernate.dialect.MariaDBDialect"
+        dialect: "org.hibernate.dialect.MariaDB53Dialect"
   # ---- (02.03.)SPRING-H2-CONFIGURATION ----
   #h2:
   #  console:
