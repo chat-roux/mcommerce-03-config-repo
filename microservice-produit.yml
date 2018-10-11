@@ -34,11 +34,11 @@ spring:
 ######################################################
 # ---- (03.)ACTUATOR-CONFIGURATION ----
 ######################################################
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
     
 ######################################################
 # ---- (04.)EUREKA-CONFIGURATION ----
