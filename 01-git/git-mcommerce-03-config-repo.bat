@@ -35,8 +35,8 @@ git commit -m "Premier commit"
 #      -->REPOSITORY DISTANT A ENREGISTRER         : LE REPOSITORY DISTANT FOURNI.
 #      -->REPOSITORY LOCAL DANS LEQUEL ENREGISTRER : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
-git remote add distant https://github.com/chat-roux/mcommerce-config-repo.git
-git remote add distant git@github.com:chat-roux/mcommerce-config-repo.git
+git remote add distantHttps https://github.com/chat-roux/mcommerce-03-config-repo.git
+git remote add distantSsh git@github.com:chat-roux/mcommerce-03-config-repo.git
 
 ##############################################################################
 # (07.)DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
